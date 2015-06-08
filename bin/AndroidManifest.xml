@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.boston.thenewboston"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <element>
+            	<intent-filter>
+            		<action android:name="android.intent.action.MAIN" />
+
+            		<category
+            			android:name="android.intent.category.LAUNCHER" />
+            	</intent-filter>
+            </element>
+        </activity>
+         <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog"
+            >
+            <element>
+            	<intent-filter>
+            		<action android:name="com.boston.thenewboston.ABOUT" />
+
+            		<category
+            			android:name="android.intent.category.DEFAULT" />
+            	</intent-filter>
+            </element>
+        </activity>
+        
+        <activity
+            android:name=".Starting"
+            android:label="@string/app_name" >
+            <element>
+            	<intent-filter>
+            		<action android:name="com.boston.thenewboston.STARTING" />
+
+            		<category
+            			android:name="android.intent.category.DEFAULT" />
+            	</intent-filter>
+            </element>
+        </activity>
+         <activity
+            android:name=".Menu"
+            android:label="@string/app_name" >
+            <element>
+            	<intent-filter>
+            		<action android:name="com.boston.thenewboston.MENU" />
+
+            		<category
+            			android:name="android.intent.category.DEFAULT" />
+            	</intent-filter>
+            </element>
+        </activity>
+        <activity
+            android:name=".Prefs"
+            android:label="@string/app_name" >
+            <element>
+            	<intent-filter>
+            		<action android:name="com.boston.thenewboston.PREFS" />
+
+            		<category
+            			android:name="android.intent.category.DEFAULT" />
+            	</intent-filter>
+            </element>
+        </activity>
+         <activity
+            android:name=".TextPlay"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".Email"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".GFX"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".GFXSurface"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".SoundStuff"
+            android:label="@string/app_name" >
+            
+        </activity>
+         <activity
+            android:name=".Camera"
+            android:label="camera app" 
+            android:screenOrientation="portrait"
+            >
+            
+        </activity>
+        <activity
+            android:name=".Slider"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".SimpleBrowser"
+            android:label="@string/app_name" >
+            
+        </activity>
+    </application>
+
+</manifest>
